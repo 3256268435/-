@@ -16,5 +16,33 @@
 #### 1.编写上述实体类以及测试主类（注意类之间继承关系的适用）
 #### 2.在测试主类中，实例化多个类实体，模拟学生选课操作、打印课程信息（信息包括：编号、课程名称、上课地点、时间、授课教师 等）；模拟学生退课操作，再打印课程信息。
 ## 四、流程图
+
 ## 五、核心代码
-'''
+``` 
+package selectCourse;
+public class Test {
+    public static void main(String[] args) {
+        Student me = new Student(2019310200, "李涛", "MAN");
+        System.out.println("学生信息");
+        System.out.println(me);
+        Teacher b = new Teacher(01, "周义明", "MAN", "模电");
+        System.out.println("教师信息");
+        System.out.println(b);
+        Course c = new Course("模电", 01, "207", 90f);
+        System.out.println("课程信息");
+        System.out.println(c); 
+        me.tuike();
+        me.delete();
+   
+}
+}  
+```
+## 六、实验过程
+#### 1.Teacher和Student为子类， 用extends继承person的属性和方法
+#### 2.利用super函数调用父类的构造方法，实例化子类
+#### 3.在Course类创建课程信息并将所选课覆盖即退课
+#### 4 在test里输入选课信息之后退课
+## 七、实验结果
+![](
+## 八、实验感想
+对super访问父类属性和extends继承父类构造方法有一些了解
