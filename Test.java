@@ -1,16 +1,14 @@
 package selectCourse;
-import java.util.Scanner;     //Ö÷Òª¹¦ÄÜÊÇ¼ò»¯ÎÄ±¾É¨Ãè¡¢»ñÈ¡¿ØÖÆÌ¨ÊäÈë
 public class Test {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        Student me = new Student(2019310200, "ÀîÌÎ", "MAN");
-        System.out.println("Ñ§ÉúĞÅÏ¢");
+        Student me = new Student(2019310642, "ææ¶›", "MAN");
+        System.out.println("å­¦ç”Ÿä¿¡æ¯");
         System.out.println(me);
-        Teacher b = new Teacher(01, "ÖÜÒåÃ÷", "MAN", "Ä£µç");
-        System.out.println("½ÌÊ¦ĞÅÏ¢");
+        Teacher b = new Teacher(01, "å‘¨ä¹‰æ˜", "MAN", "æ¨¡ç”µ");
+        System.out.println("æ•™å¸ˆä¿¡æ¯");
         System.out.println(b);
-        Course c = new Course("Ä£µç", 01, "207", 90f);
-        System.out.println("¿Î³ÌĞÅÏ¢");
+        Course c = new Course("æ¨¡ç”µ", 01, "207", 90f);
+        System.out.println("è¯¾ç¨‹ä¿¡æ¯");
         System.out.println(c); 
         me.tuike();
         me.delete();
